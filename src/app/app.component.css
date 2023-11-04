@@ -1,0 +1,7 @@
+header{
+    background-image: url('../../projeto_hotel_imagens/header.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
