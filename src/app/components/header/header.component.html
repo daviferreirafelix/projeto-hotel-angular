@@ -1,9 +1,41 @@
-<mat-toolbar class="toolbar">
+<nav>
+  <div class="toolbar">
     <h1>LOGOMARCA</h1>
-    <mat-nav-list class="links">
-        <mat-list-item class="linkChild"><a routerLink="/">HOME</a></mat-list-item>
-        <mat-list-item class="linkChild"><a routerLink="/">QUARTOS</a></mat-list-item>
-        <mat-list-item class="linkChild"><a routerLink="/">SOBRE</a></mat-list-item>
-        <mat-list-item class="linkChild"><a routerLink="/">SUPORTE</a></mat-list-item>
-    </mat-nav-list>
-</mat-toolbar>
+    <ul class="links">
+      <a id="home" routerLink="/">HOME</a>
+      <a routerLink="../components/form">CADASTRE-SE</a>
+      <a routerLink="/">QUARTOS</a>
+      <a routerLink="/">SUPORTE</a>
+      <a routerLink="/">SOBRE</a>
+    </ul>
+  </div>
+
+  <div id="menuResp">
+      
+      <button mat-button [matMenuTriggerFor]="menu" class="botaoResp">
+        <img
+        src="../../../assets/projeto_hotel_imagens/menu.png"
+        alt="Menu Mobile"/>
+    </button>
+    
+    <h1>LOGOMARCA</h1>
+
+      <mat-menu #menu="matMenu">
+        <a routerLink="/">
+            <button mat-menu-item id="home">HOME</button>
+        </a>
+        <a routerLink="../components/form">
+            <button mat-menu-item>CADASTRE-SE</button>
+        </a>
+        <a routerLink="/">
+            <button mat-menu-item>QUARTOS</button>
+        </a>
+        <a routerLink="/">
+            <button mat-menu-item>SUPORTE</button>
+        </a>
+        <a routerLink="/">
+            <button mat-menu-item>SOBRE</button>
+        </a>
+      </mat-menu>
+  </div>
+</nav>

@@ -1,22 +1,80 @@
 .toolbar{
-    background-color: rgb(59, 15, 15);
-    position: relative;
+    background-color: rgb(41, 11, 11);;
+    position: fixed;
     top: 3em;
-    max-width: 80vw;
-    margin: auto;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%);
+    width: 80vw;
     border-radius: 0.7em;
     display: flex;
     justify-content: space-between;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.300);
+    padding: 0 1em;
+    color: white;
+    
+}
+
+#home{
+    background-color: crimson;
+}
+
+#home:hover{
+    background-color: rgba(220, 20, 60, 0.466);
 }
 
 .links{
     display: flex;
+    align-items: center;
 }
 
-.links .linkChild{
-    margin-left: 2em;
-    width: 6em;
-    text-align: center;
+.links a{
+    margin: 0 2em 0 0;
+    padding: 0.5em 1em;
     border-radius: 0.7em;
+}
+
+.links a:hover{
+    background-color: rgba(192, 192, 192, 0.267);
+}
+
+#menuResp{
+    display: none;
+}
+
+
+@media (max-width: 1050px){
+    .toolbar{
+        display: none;
+    }
+
+    #menuResp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menuResp h1{
+        background-color: brown;
+        color: white;
+        max-width: fit-content;
+        padding: 0.7em;
+        margin: 0.5em auto;
+        border-radius: 0.7em;
+    }
+
+    .botaoResp, .botaoResp img{
+        width: 32px;
+        height: 32px;
+        border-radius: 0.7em;
+        cursor: pointer;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 3em;
+    }
 }

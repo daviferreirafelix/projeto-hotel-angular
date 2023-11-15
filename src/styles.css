@@ -1,6 +1,44 @@
-@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+* { list-style: none; }
+
+html, body { height: 100%; font-family: sans-serif; }
+body { margin: 0; }
+
+a { text-decoration: none; color: inherit; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-a{ text-decoration: none; color: inherit; }
+
+.boas-vindas{
+    background-color: silver;
+    padding: 1.5em;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.300);
+    font-size: 1.3em;
+}
+
+.boas-vindas h2{
+    color: rgb(41, 11, 11);
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+#enviar{
+    background-color: rgba(0, 128, 0, 0.808);
+    padding: 1em;
+    color: white;
+    cursor: pointer;
+    margin-right: 0.5em;
+    border-radius: 0.7em;
+}
+
+#limpar{
+    background-color: rgba(255, 0, 0, 0.781);
+    padding: 1em;
+    color: white;
+    cursor: pointer;
+    margin-left: 0.5em;
+    border-radius: 0.7em;
+}
