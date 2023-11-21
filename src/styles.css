@@ -5,6 +5,10 @@ body { margin: 0; }
 
 a { text-decoration: none; color: inherit; }
 
+a:hover{
+    color: inherit;
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -14,6 +18,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 1.5em;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.300);
     font-size: 1.3em;
+    text-align: center;
 }
 
 .boas-vindas h2{
