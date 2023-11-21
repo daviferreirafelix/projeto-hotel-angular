@@ -1,40 +1,32 @@
-<nav>
-  <div class="toolbar">
-    <h2>LOGOMARCA</h2>
-    <ul class="links">
-      <a id="home" routerLink="/">HOME</a>
-      <a routerLink="../components/form">CADASTRE-SE</a>
-      <a routerLink="/">QUARTOS</a>
-      <a routerLink="/">SUPORTE</a>
-      <a routerLink="/">SOBRE</a>
+<nav class="navbar navbar-expand-lg container" id="toolbar">
+  <a class="navbar-brand" routerLink="/">LOGOMARCA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon">
+      <img src="../../../assets/projeto_hotel_imagens/menu.png" alt="">
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/" id="home">HOME <span class="sr-only">(página atual)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="../components/form">CADASTRE-SE</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          QUARTOS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="../components/quartos/quarto-simples">Simples</a>
+          <a class="dropdown-item" routerLink="../components/quartos/quarto-luxo">Luxo</a>
+          <a class="dropdown-item" routerLink="../components/quartos/quarto-moderno">Moderno</a>
+          <a class="dropdown-item" routerLink="../components/quartos/dormitorio-simples">Dormitório</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="../components/pages/sobre">SOBRE</a>
+      </li>
+
     </ul>
-  </div>
-
-  <div id="menuResp">
-      <button mat-button [matMenuTriggerFor]="menu" class="botaoResp">
-        <img
-        src="../../../assets/projeto_hotel_imagens/menu.png"
-        alt="Menu Mobile"/>
-    </button>
-    
-    <h1>LOGOMARCA</h1>
-
-      <mat-menu #menu="matMenu">
-        <a routerLink="/">
-            <button mat-menu-item id="home">HOME</button>
-        </a>
-        <a routerLink="../components/form">
-            <button mat-menu-item>CADASTRE-SE</button>
-        </a>
-        <a routerLink="/">
-            <button mat-menu-item>QUARTOS</button>
-        </a>
-        <a routerLink="/">
-            <button mat-menu-item>SUPORTE</button>
-        </a>
-        <a routerLink="/">
-            <button mat-menu-item>SOBRE</button>
-        </a>
-      </mat-menu>
-  </div>
-</nav>

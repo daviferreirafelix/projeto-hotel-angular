@@ -22,6 +22,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './components/header/header.component';
 import { FormComponent } from './components/form/form.component';
+import { QuartoSimplesComponent } from './components/quartos/quarto-simples/quarto-simples.component';
+import { QuartoLuxoComponent } from './components/quartos/quarto-luxo/quarto-luxo.component';
+import { QuartoModernoComponent } from './components/quartos/quarto-moderno/quarto-moderno.component';
+import { DormitorioSimplesComponent } from './components/quartos/dormitorio-simples/dormitorio-simples.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,10 @@ import { FormComponent } from './components/form/form.component';
     SuporteComponent,
     HeaderComponent,
     FormComponent,
+    QuartoSimplesComponent,
+    QuartoLuxoComponent,
+    QuartoModernoComponent,
+    DormitorioSimplesComponent,
   ],
   imports: [
     BrowserModule,

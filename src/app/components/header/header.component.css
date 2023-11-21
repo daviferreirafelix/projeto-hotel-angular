@@ -1,42 +1,46 @@
-.toolbar{
-    background-color: rgb(41, 11, 11);;
+#toolbar{
+    background-color: rgb(41, 11, 11);
+    color: white;
     position: fixed;
     top: 3em;
     left: 50%;
     z-index: 2;
     transform: translate(-50%);
-    width: 80vw;
+    width: fit-content;
     border-radius: 0.7em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.300);
     padding: 1em;
-    color: white;
-    
 }
 
 #home{
-    background-color: crimson;
+    background-color: brown;
+    border-radius: 0.5em;
 }
 
-#home:hover{
-    background-color: rgba(220, 20, 60, 0.466);
-}
-
-.links{
-    display: flex;
-    margin-bottom: 0;
-}
-
-.links a{
-    margin: 0 2em 0 0;
+li{
     padding: 0.5em 1em;
+}
+
+.nav-item:hover{
+    background-color: rgba(0, 0, 0, 0.425);
     border-radius: 0.7em;
 }
 
-.links a:hover{
-    background-color: rgba(192, 192, 192, 0.267);
+#home:hover{
+    background-color: rgb(102, 28, 28);
+}
+
+img{
+    width: 32px;
+    height: 32px;;
+}
+
+#conteudoNavBarSuportado{
+    display: flex;
+    justify-content: space-between;
 }
 
 #menuResp{
@@ -44,41 +48,10 @@
 }
 
 
-@media (max-width: 1050px){
-    .toolbar{
-        display: none;
-    }
-
-    #menuResp{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #menuResp h1{
-        background-color: brown;
-        color: white;
-        max-width: fit-content;
-        padding: 0.7em;
-        margin: 0.5em auto;
-        border-radius: 0.7em;
-    }
-
-    .botaoResp, .botaoResp img{
-        width: 32px;
-        height: 32px;
-        border-radius: 0.7em;
-        cursor: pointer;
-        z-index: 1;
-    }
-
-    .botaoResp{
-        position: fixed;
-        top: 1em;
-    }
-
+@media (max-width: 1090px){
     nav{
+        max-width: 250px;
+        text-align: center;
         display: flex;
         justify-content: center;
         position: relative;

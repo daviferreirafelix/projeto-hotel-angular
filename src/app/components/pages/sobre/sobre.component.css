@@ -1,0 +1,10 @@
+article{
+    max-width: 80vw;
+    margin: 2.5em auto;
+}
+
+img{
+    display: block;
+    max-width: 80vw;
+    margin: 1.5em 0;
+}

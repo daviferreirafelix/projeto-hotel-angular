@@ -1,0 +1,17 @@
+img{
+    display: block;
+    max-width: 70vw;
+    margin: 2em auto;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.300);
+}
+
+article p{
+    max-width: 70vw;
+    margin: 2em auto;
+}
+
+article h2{
+    text-align: center;
+    margin: 2em 0;
+}
