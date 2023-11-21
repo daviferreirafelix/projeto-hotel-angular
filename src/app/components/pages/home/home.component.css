@@ -1,20 +1,16 @@
 h2{
     text-align: center;
 }
-
-a{
-    display: flex;
-    flex-direction: column;
-    max-width: 90vw;
-    margin: 0 0 2em 3em;
-    border-radius: 0.7em;
-}
-
 .bola-content .imgBola{
     margin: auto;
 }
 
-a .card{
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    margin: 2em auto;
+    border-radius: 0.7em;
     background-color: silver;
     text-align: center;
     border-radius: 0.7em;
@@ -24,17 +20,14 @@ a .card{
     display: block;
     margin: 1em auto;
     position: relative;
-    max-width: 50vw;
+    max-width: 90vw;
+    min-width: 70vw;
     max-height: 500px;
     border-radius: 0.7em;
 }
 
 .boas-vindas h2{
     color: rgb(41, 11, 11);
-}
-
-.content h2{
-    margin: 1em 0;
 }
 
 #title{

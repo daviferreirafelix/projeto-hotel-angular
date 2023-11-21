@@ -50,7 +50,6 @@ img{
 
 @media (max-width: 1090px){
     nav{
-        max-width: 250px;
         text-align: center;
         display: flex;
         justify-content: center;
